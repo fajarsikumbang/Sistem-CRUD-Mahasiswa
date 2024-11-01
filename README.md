@@ -40,7 +40,7 @@ cd <NAMA_FOLDER>
 Masuk ke folder frontend (biasanya bernama `client` atau serupa) dan jalankan perintah berikut:
 
 ```bash
-cd frontend
+cd mahasiswalist
 npm install
 ```
 
@@ -59,7 +59,7 @@ Aplikasi akan berjalan di `http://localhost:3000`.
 Masuk ke folder backend (biasanya bernama `backend` atau serupa) dan jalankan perintah berikut:
 
 ```bash
-cd backend
+cd mahasiswa-backend
 npm install
 ```
 
