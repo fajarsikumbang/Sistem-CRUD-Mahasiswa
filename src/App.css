@@ -1,38 +1,141 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f8fa;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 2.5em;
+  color: #6f42c1; /* Ganti warna judul menjadi ungu */
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header p {
+  color: #666;
+  font-size: 1.1em;
+  margin: 5px 0 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 2em;
+  color: #333;
+  margin: 20px 0 10px;
+  border-bottom: 2px solid #6f42c1; /* Ganti warna garis bawah menjadi ungu */
+  padding-bottom: 5px;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+form label {
+  font-weight: 600;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+form input:focus {
+  border-color: #6f42c1; /* Ganti warna border saat fokus menjadi ungu */
+}
+
+button {
+  padding: 10px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #6f42c1; /* Ganti warna tombol menjadi ungu */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #5a32a6; /* Warna lebih gelap saat hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+  background-color: #f5f7fa;
+  color: #333;
+  font-weight: 600;
+}
+
+table tr:hover {
+  background-color: #f1f5f9;
+}
+
+.table-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.table-actions .edit-btn,
+.table-actions .delete-btn {
+  padding: 8px 10px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.table-actions .edit-btn {
+  background-color: #ab47bc; /* Warna tombol edit ungu */
+}
+
+.table-actions .delete-btn {
+  background-color: #e74c3c; /* Warna tombol hapus tetap merah */
+}
+
+.table-actions .edit-btn:hover {
+  background-color: #9c27b0; /* Warna lebih gelap saat hover */
+}
+
+.table-actions .delete-btn:hover {
+  background-color: #c0392b; /* Warna lebih gelap saat hover */
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
 }
