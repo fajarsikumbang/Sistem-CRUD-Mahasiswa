@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+Sistem CRUD Mahasiswa adalah aplikasi web yang memungkinkan pengguna untuk mengelola data mahasiswa dengan mudah. Pengguna dapat menambahkan, mengedit, dan menghapus data mahasiswa. Data mahasiswa disimpan dalam file JSON dan dapat diakses melalui server Node.js.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Fitur
 
-## Available Scripts
+- **Menambah Mahasiswa**: Pengguna dapat menambahkan data mahasiswa baru.
+- **Mengedit Mahasiswa**: Pengguna dapat mengedit data mahasiswa yang sudah ada.
+- **Menghapus Mahasiswa**: Pengguna dapat menghapus data mahasiswa.
+- **Menampilkan Daftar Mahasiswa**: Menampilkan semua data mahasiswa dalam tabel.
+- **Simpan Data ke JSON**: Data mahasiswa disimpan dalam file JSON di server.
 
-In the project directory, you can run:
+## Teknologi yang Digunakan
 
-### `npm start`
+- **Frontend**: 
+  - React
+  - Axios
+  - CSS untuk styling
+- **Backend**: 
+  - Node.js
+  - Express
+  - Body-parser
+  - CORS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Sebelum memulai, pastikan Anda telah menginstal [Node.js](https://nodejs.org/) dan [npm](https://www.npmjs.com/get-npm) di komputer Anda.
 
-### `npm test`
+## Instalasi
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan aplikasi ini:
 
-### `npm run build`
+### 1. Kloning Repositori
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone <URL_REPOSITORY>
+cd <NAMA_FOLDER>
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Instal Dependensi Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Masuk ke folder frontend (biasanya bernama `client` atau serupa) dan jalankan perintah berikut:
 
-### `npm run eject`
+```bash
+cd frontend
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Menjalankan Aplikasi Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Setelah semua dependensi terinstal, jalankan aplikasi frontend dengan perintah:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Aplikasi akan berjalan di `http://localhost:3000`.
 
-## Learn More
+### 4. Instal Dependensi Backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Masuk ke folder backend (biasanya bernama `backend` atau serupa) dan jalankan perintah berikut:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd backend
+npm install
+```
 
-### Code Splitting
+### 5. Menjalankan Server Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Setelah semua dependensi terinstal, jalankan server backend dengan perintah:
 
-### Analyzing the Bundle Size
+```bash
+node server.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Server akan berjalan di `http://localhost:5000`.
 
-### Making a Progressive Web App
+## Menggunakan Aplikasi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Buka aplikasi di browser dengan mengunjungi `http://localhost:3000`.
+2. Gunakan formulir untuk menambah mahasiswa baru.
+3. Klik tombol edit untuk mengubah data mahasiswa yang sudah ada.
+4. Klik tombol hapus untuk menghapus mahasiswa dari daftar.
 
-### Advanced Configuration
+## Struktur Proyek
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```plaintext
+.
+├── frontend               # Folder untuk aplikasi React
+│   ├── public
+│   ├── src
+│   └── package.json
+└── backend                # Folder untuk server Node.js
+    ├── mahasiswa.json     # File JSON untuk menyimpan data mahasiswa
+    └── server.js
+```
 
-### Deployment
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Jika Anda ingin berkontribusi pada proyek ini, silakan buat pull request atau laporkan masalah.
 
-### `npm run build` fails to minify
+## Lisensi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
+
+## Penulis
+
+- Nama Anda - [Profil Anda](https://github.com/username)
+```
+
+### Menambahkan Informasi
+
+- Gantilah `<URL_REPOSITORY>` dengan URL repositori Git yang sesuai.
+- Gantilah `<NAMA_FOLDER>` dengan nama folder tempat Anda mengkloning repositori.
+- Gantilah `frontend` dan `backend` dengan nama folder yang sesuai jika menggunakan nama yang berbeda.
+- Sesuaikan nama penulis dan profil Anda di bagian penulis jika perlu.
