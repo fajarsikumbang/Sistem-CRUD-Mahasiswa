@@ -103,7 +103,7 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ## Penulis
 
-- Nama Anda - [Profil Anda](https://github.com/username)
+- Fajar Maulana - [Profil Saya](https://www.linkedin.com/in/fajar-maulana-a843ab261/)
 ```
 
 ### Menambahkan Informasi
